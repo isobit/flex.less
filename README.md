@@ -4,13 +4,16 @@ flex.less
 Minimal LESS responsive framework.
 
 ## Installation
-To use as-is (just the minified css):
+### To use as-is (just the minified css):
 
 `wget https://raw.githubusercontent.com/joshglendenning/flex.less/v2/flex.css`
 
-To use with a LESS project:
+### To use with a LESS project:
 
 `wget -O- https://raw.githubusercontent.com/joshglendenning/flex.less/v2/flex.tar.gz | tar xvz`
+
+...and then import it in your project's LESS:
+`@import 'flex/flex'`
 
 ## Usage
 
