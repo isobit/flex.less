@@ -1,2 +1,9 @@
 default:
-	lessc -x less/flex.less > css/flex.css
+	lessc -x flex/flex.less > flex.css
+
+package:
+	zip flex.zip flex/*
+
+clean:
+	@rm -f flex.css
+	@rm -f flex.zip
