@@ -2,6 +2,9 @@
  * ================================
  */
 
+// Colors
+// ----------------------------------
+
 .link-color(@color) {
 	a {
 		color: @color;
@@ -13,4 +16,51 @@
 
 a {
 	.link-color(@primary-color);
+}
+
+// Spacing
+// -----------------------------------
+
+.padding-tiny {
+  padding: 10px;
+}
+.padding-small {
+  padding: 20px;
+  @media @small {
+	.padding-tiny;
+  }
+}
+.padding-med {
+  padding: 30px;
+  @media @small {
+	.padding-small;
+  }
+}
+.padding-large {
+  padding: 50px;
+  @media @small {
+	.padding-med;
+  }
+}
+
+.margin-tiny {
+  margin: 15px;
+}
+.margin-small {
+  margin: 20px;
+  @media @small {
+	.margin-tiny;
+  }
+}
+.margin-med {
+  margin: 25px;
+  @media @small {
+	.margin-small;
+  }
+}
+.margin-large {
+  margin: 30px;
+  @media @small {
+	.margin-med;
+  }
 }
