@@ -1,0 +1,16 @@
+/* flex-theme.less
+ * ================================
+ */
+
+.link-color(@color) {
+	a {
+		color: @color;
+	}
+	a:hover {
+		color: darken(@color, 15%);
+	}
+}
+
+a {
+	.link-color(@primary-color);
+}
